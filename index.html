@@ -20,31 +20,34 @@
     <div class="light-sweep"></div>
 
     <nav class="glass-nav">
-        <span class="brand">AGENCY / STRATEGY</span>
-        <span class="date">Day 1 Report</span>
+        <div class="nav-left">
+            <span class="brand" data-key="nav_brand">AGENCY / STRATEGY</span>
+            <span class="date" data-key="nav_date">Day 1 Report</span>
+        </div>
+        <button id="lang-toggle" class="lang-btn">CN / EN</button>
     </nav>
 
     <main>
         <header class="hero-section">
             <div class="hero-content">
-                <p class="overline reveal">Confidential Strategy Deck</p>
-                <h1 class="reveal delay-1">Day 1 &mdash; Market &<br>Creative Strategy</h1>
-                <h2 class="reveal delay-2">TV Product Visual Research & Social Growth Plan</h2>
+                <p class="overline reveal" data-key="hero_overline">Confidential Strategy Deck</p>
+                <h1 class="reveal delay-1" data-key="hero_title">Day 1 &mdash; Market &<br>Creative Strategy</h1>
+                <h2 class="reveal delay-2" data-key="hero_subtitle">TV Product Visual Research & Social Growth Plan</h2>
                 <div class="separator reveal delay-3"></div>
-                <p class="intro-text reveal delay-3">
+                <p class="intro-text reveal delay-3" data-key="hero_intro">
                     This document captures research, observations, and creative explorations conducted on Day 1, focusing on product listing visuals and social media growth opportunities.
                 </p>
             </div>
             <div class="scroll-indicator reveal delay-4">
-                <span>Scroll to Explore</span>
+                <span data-key="scroll_text">Scroll to Explore</span>
                 <div class="line"></div>
             </div>
         </header>
 
         <section class="section brand-study">
             <div class="container">
-                <h3 class="section-title reveal">Brand Landscape Overview</h3>
-                <p class="section-subtitle reveal">Understanding the positioning differences helps define our creative boundaries.</p>
+                <h3 class="section-title reveal" data-key="brand_title">Brand Landscape Overview</h3>
+                <p class="section-subtitle reveal" data-key="brand_subtitle">Understanding the positioning differences helps define our creative boundaries.</p>
                 
                 <div class="card-grid">
                     <div class="glass-card reveal">
@@ -52,7 +55,7 @@
                             <h4>Coocaa</h4>
                             <span class="tag">Challenger</span>
                         </div>
-                        <ul class="specs">
+                        <ul class="specs" data-key="coocaa_specs">
                             <li>Youth-focused & energetic</li>
                             <li>Value-driven proposition</li>
                             <li>Bold, experimental visuals</li>
@@ -64,7 +67,7 @@
                             <h4>Metz</h4>
                             <span class="tag">Heritage</span>
                         </div>
-                        <ul class="specs">
+                        <ul class="specs" data-key="metz_specs">
                             <li>European legacy brand</li>
                             <li>Performance-oriented engineering</li>
                             <li>Clean, understated premium</li>
@@ -76,7 +79,7 @@
                             <h4>Philips</h4>
                             <span class="tag">Standard</span>
                         </div>
-                        <ul class="specs">
+                        <ul class="specs" data-key="philips_specs">
                             <li>Globally trusted household name</li>
                             <li>Technology-first approach</li>
                             <li>Consistent, safe visual language</li>
@@ -88,174 +91,137 @@
 
         <section class="section ecommerce-study">
             <div class="container">
-                <h3 class="section-title reveal">E-commerce Listing Reality</h3>
+                <h3 class="section-title reveal" data-key="ecom_title">E-commerce Listing Reality</h3>
                 
                 <div class="glass-panel text-block reveal">
-                    <p>Amazon & Flipkart maintain strict mandatory standards for TV main images. The background, framing, and product placement are controlled by the platform, causing almost all brands to appear visually identical in the search feed.</p>
+                    <p data-key="ecom_text">Amazon & Flipkart maintain strict mandatory standards for TV main images. The background, framing, and product placement are controlled by the platform.</p>
                     
                     <div class="insight-box">
                         <span class="icon">⚡</span>
-                        <blockquote>
+                        <blockquote data-key="ecom_quote">
                             “Since we cannot change the outer frame of the listing, the only real creative control lies in what we show inside the TV screen.”
                         </blockquote>
                     </div>
-                    <p class="small-caption">This internal screen space is the key creative battlefield.</p>
                 </div>
             </div>
         </section>
 
         <section class="section creative-strategy">
             <div class="container">
-                <h3 class="section-title reveal">Creative Strategy for Main Image</h3>
-                <p class="section-intro reveal">Three distinct creative approaches were explored to stand out while remaining fully Amazon-compliant.</p>
+                <h3 class="section-title reveal" data-key="creative_title">Creative Strategy for Main Image</h3>
+                <p class="section-intro reveal" data-key="creative_subtitle">Three distinct creative approaches were explored to stand out while remaining fully Amazon-compliant.</p>
 
                 <div class="strategy-block reveal">
                     <div class="strategy-text">
                         <span class="number">01</span>
-                        <h4>High-Definition Psychology (HD Series)</h4>
-                        <p class="mb-2">This approach moves beyond generic aesthetics to leverage cognitive bias.</p>
-                        
-                        <div class="psychology-breakdown">
-                            <div class="theory-item">
-                                <strong>The Evolutionary Gaze:</strong>
-                                <p>Human biology is hardwired to seek out eyes and faces immediately upon entering a scene. By using high-fidelity close-ups of eyes (HD1), we force an immediate "lock" with the user's attention before they even process the product specs.</p>
-                            </div>
-                            <div class="theory-item">
-                                <strong>The Zeigarnik Effect (The Gap):</strong>
-                                <p>The brain is uncomfortable with ambiguity. When we show an incomplete texture or a partial narrative (HD3), the mind subconsciously works to "fill in the gap." This active cognitive processing creates a stronger memory imprint than a passive, complete image.</p>
-                            </div>
-                        </div>
+                        <h4 data-key="strat_1_title">High-Definition Psychology (HD Series)</h4>
+                        <p class="mb-2" data-key="strat_1_desc">This approach moves beyond generic aesthetics to leverage cognitive bias (The Evolutionary Gaze & Zeigarnik Effect).</p>
                     </div>
                     <div class="image-row">
-                        <figure>
-                            <img src="./Images/hd1.png" alt="HD Concept 1">
-                            <figcaption>Visual Hook: The Eye</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./Images/hd2.png" alt="HD Concept 2">
-                            <figcaption>Micro-Detail Texture</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./Images/hd3.png" alt="HD Concept 3">
-                            <figcaption>Cognitive Gap</figcaption>
-                        </figure>
+                        <figure><img src="./Images/hd1.png" alt="HD Concept 1"><figcaption data-key="cap_visual_hook">Visual Hook</figcaption></figure>
+                        <figure><img src="./Images/hd2.png" alt="HD Concept 2"><figcaption data-key="cap_texture">Micro-Detail Texture</figcaption></figure>
+                        <figure><img src="./Images/hd3.png" alt="HD Concept 3"><figcaption data-key="cap_gap">Cognitive Gap</figcaption></figure>
                     </div>
                 </div>
 
                 <div class="strategy-block reveal">
                     <div class="strategy-text">
                         <span class="number">02</span>
-                        <h4>Gen Z Bold Visual Language</h4>
-                        <p>Loud, colorful, and modern art styles. A confident, experimental risk designed to stop scrolling instantly. This approach speaks directly to a youth-centric demographic.</p>
+                        <h4 data-key="strat_2_title">Gen Z Bold Visual Language</h4>
+                        <p data-key="strat_2_desc">Loud, colorful, and modern art styles. A confident, experimental risk designed to stop scrolling instantly.</p>
                     </div>
                     <div class="image-row">
-                        <figure>
-                            <img src="./Images/genz1.png" alt="Gen Z Concept 1">
-                        </figure>
-                        <figure>
-                            <img src="./Images/genz2.png" alt="Gen Z Concept 2">
-                        </figure>
-                        <figure>
-                            <img src="./Images/genz3.png" alt="Gen Z Concept 3">
-                        </figure>
+                        <figure><img src="./Images/genz1.png" alt="Gen Z 1"></figure>
+                        <figure><img src="./Images/genz2.png" alt="Gen Z 2"></figure>
+                        <figure><img src="./Images/genz3.png" alt="Gen Z 3"></figure>
                     </div>
                 </div>
 
-                <div class="strategy-block reveal">
+                 <div class="strategy-block reveal">
                     <div class="strategy-text">
                         <span class="number">03</span>
-                        <h4>Conceptual Storytelling (Unique Series)</h4>
-                        <p>Using visual metaphors (e.g., Cat → Tiger) to demonstrate power, clarity, and transformation. Focusing on emotional meaning rather than literal technical specifications.</p>
+                        <h4 data-key="strat_3_title">Conceptual Storytelling (Unique Series)</h4>
+                        <p data-key="strat_3_desc">Using visual metaphors (e.g., Cat → Tiger) to demonstrate power, clarity, and transformation.</p>
                     </div>
                     <div class="image-row">
-                        <figure>
-                            <img src="./Images/unique1.png" alt="Unique Concept 1">
-                        </figure>
-                        <figure>
-                            <img src="./Images/unique2.png" alt="Unique Concept 2">
-                        </figure>
-                        <figure>
-                            <img src="./Images/unique3.png" alt="Unique Concept 3">
-                        </figure>
+                        <figure><img src="./Images/unique1.png" alt="Unique 1"></figure>
+                        <figure><img src="./Images/unique2.png" alt="Unique 2"></figure>
+                        <figure><img src="./Images/unique3.png" alt="Unique 3"></figure>
                     </div>
-                </div>
-
-                <div class="disclaimer reveal">
-                    ⚠️ The visuals shown are conceptual explorations intended to communicate creative direction. Final assets would be professionally rendered and optimized before production use.
-                </div>
-            </div>
-        </section>
-
-        <section class="section social-study">
-            <div class="container">
-                <h3 class="section-title reveal">Social Platform Study</h3>
-                <div class="comparison-grid">
-                    <div class="glass-card reveal">
-                        <h4>Facebook</h4>
-                        <p>Larger audience base with higher reach capabilities. Best utilized for broad awareness.</p>
-                    </div>
-                    <div class="glass-card highlight reveal delay-1">
-                        <h4>Instagram</h4>
-                        <p>Stronger brand perception with a younger audience. The home of visual storytelling.</p>
-                    </div>
-                </div>
-                <div class="insight-banner reveal">
-                    <p>“Facebook supports reach, while Instagram is the primary brand-building platform.”</p>
                 </div>
             </div>
         </section>
 
         <section class="section growth-strategy">
             <div class="container">
-                <h3 class="section-title reveal">Instagram Growth Strategy (2026)</h3>
-                <p class="section-subtitle reveal">A tactical roadmap to dominate the algorithm and double Coocaa's following.</p>
+                <h3 class="section-title reveal" data-key="insta_title">Instagram Growth Strategy (2026)</h3>
+                <p class="section-subtitle reveal" data-key="insta_subtitle">A tactical roadmap to dominate the algorithm and double Coocaa's following.</p>
 
-                <div class="glass-panel mb-block reveal" style="position: relative; z-index: 2;">
-                    <h4 class="sub-head">The Algorithm Decoded (Simplified)</h4>
-                    <div class="algo-grid">
-                        <div class="algo-item">
-                            <span class="icon">⚡</span>
-                            <strong>Recency & Relevance</strong>
-                            <p>Instagram pushes fresh content that fits current trends. If we use trending audio within 48 hours, reach triples.</p>
+                <div class="glass-panel reveal mb-block">
+                    <h4 class="sub-head" data-key="algo_head">1. The Algorithm Decoded (The Engine)</h4>
+                    <p class="intro-p" data-key="algo_intro">How do we get seen without spending millions on ads?</p>
+
+                    <div class="deep-dive-grid">
+                        <div class="deep-item">
+                            <h5 data-key="algo_a_title">A. Recency & Relevance</h5>
+                            <p><strong data-key="lbl_concept">The Concept:</strong> <span data-key="algo_a_concept">Instagram creates "waves" around trending audio. These waves crash after 48 hours.</span></p>
+                            <p><strong data-key="lbl_strategy">The Strategy:</strong> <span data-key="algo_a_strat">We don't just post; we surf. We execute within the "Golden Window".</span></p>
+                            <div class="pitch-box">
+                                <span class="pitch-icon">🗣️</span>
+                                <p data-key="algo_a_pitch">"We aren't just posting content; we are capitalizing on 'Velocity'. By hitting trending audio within the 48-hour Golden Window, we ride the free traffic wave."</p>
+                            </div>
                         </div>
-                        <div class="algo-item">
-                            <span class="icon">🔁</span>
-                            <strong>The Retention Loop</strong>
-                            <p>Watch time is king. If a user watches a Reel twice (looped), the algorithm assumes it's "Viral Quality".</p>
+
+                        <div class="deep-item">
+                            <h5 data-key="algo_b_title">B. The Retention Loop</h5>
+                            <p><strong data-key="lbl_concept">The Concept:</strong> <span data-key="algo_b_concept">The algorithm's #1 metric is Time Spent. If they watch twice (loop), we go viral.</span></p>
+                            <p><strong data-key="lbl_strategy">The Strategy:</strong> <span data-key="algo_b_strat">Create seamless visual loops where the end matches the beginning.</span></p>
+                            <div class="pitch-box">
+                                <span class="pitch-icon">🗣️</span>
+                                <p data-key="algo_b_pitch">"We are designing for 'The Retention Loop'. By creating seamless visual loops, we trick the brain into watching twice. This signals 'high value' to the system."</p>
+                            </div>
                         </div>
-                        <div class="algo-item">
-                            <span class="icon">💬</span>
-                            <strong>Micro-Interaction</strong>
-                            <p>Saves and Shares rank higher than Likes. We must design content that people want to <em>save for later</em>.</p>
+
+                        <div class="deep-item">
+                            <h5 data-key="algo_c_title">C. Micro-Interactions (Saves > Likes)</h5>
+                            <p><strong data-key="lbl_concept">The Concept:</strong> <span data-key="algo_c_concept">Likes are vanity. Saves are utility. A 'Save' tells the algorithm the content is valuable.</span></p>
+                            <div class="pitch-box">
+                                <span class="pitch-icon">🗣️</span>
+                                <p data-key="algo_c_pitch">"We are shifting focus from Vanity Metrics to Utility Metrics. A 'Like' is a nod; a 'Save' is a commitment."</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="layout-split">
-                    <div class="text-side reveal">
-                        <div class="stat-box">
-                            <h5>Goal</h5>
-                            <h2>Double Followers</h2>
-                            <p>Timeline: 3 Months</p>
+
+                <div class="glass-panel reveal mb-block">
+                    <h4 class="sub-head" data-key="content_head">2. Content Pillars (The Fuel)</h4>
+                    <div class="deep-dive-grid">
+                        <div class="deep-item">
+                            <h5 data-key="cont_a_title">A. Festive & Cultural</h5>
+                            <p><strong data-key="lbl_strat">Strategy:</strong> <span data-key="cont_a_strat">Connect the Screen to the Celebration. "Watch the World Cup as if you are in the stadium."</span></p>
+                            <div class="pitch-box">
+                                <span class="pitch-icon">🗣️</span>
+                                <p data-key="cont_a_pitch">"We don't just acknowledge festivals; we enhance them. We position the TV as the window through which families experience moments."</p>
+                            </div>
                         </div>
-                        
-                        <div class="strategy-list">
-                            <div class="item">
-                                <strong>1. Festive & Cultural (Coocaa India)</strong>
-                                <p>Don't just say "Happy Diwali." Own the moment. <br><em>Idea:</em> "The Ultimate Cricket World Cup Setup" or "Colors of Holi in 4K." Connect specs to emotions.</p>
+                        <div class="deep-item">
+                            <h5 data-key="cont_b_title">B. Bold & Challenger</h5>
+                            <p><strong data-key="lbl_strat">Strategy:</strong> <span data-key="cont_b_strat">Side-by-side visual evidence. Crisp 4K vs. Muddy 1080p. Don't tell them; show them.</span></p>
+                            <div class="pitch-box">
+                                <span class="pitch-icon">🗣️</span>
+                                <p data-key="cont_b_pitch">"Confidence converts. We use side-by-side visual evidence to show consumers exactly why they are overpaying for other brands."</p>
                             </div>
-                            <div class="item">
-                                <strong>2. Bold & Challenger (Coocaa Global)</strong>
-                                <p>Stop being polite. Call out the boring competition. <br><em>Idea:</em> Side-by-side comparisons. "Why pay double for the same pixels?"</p>
-                            </div>
-                            <div class="item">
-                                <strong>3. Humorous & Relatable</strong>
-                                <p>Gen Z loves self-aware humor. <br><em>Idea:</em> "POV: You lost the remote again" or "Netflix & actually chilling." Humanize the tech.</p>
+                        </div>
+                         <div class="deep-item">
+                            <h5 data-key="cont_c_title">C. Humorous & Relatable</h5>
+                            <p><strong data-key="lbl_strat">Strategy:</strong> <span data-key="cont_c_strat">Memes about losing the remote or "Netflix and actually sleeping." Humanize the tech.</span></p>
+                            <div class="pitch-box">
+                                <span class="pitch-icon">🗣️</span>
+                                <p data-key="cont_c_pitch">"Tech can feel cold. Humor makes it warm. By tapping into shared 'Living Room Pain Points', we turn a plastic box into a personality."</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="visual-side reveal">
+                     <div class="visual-side reveal" style="margin-top: 30px;">
                         <div class="insta-grid">
                             <img src="./Images/insta1.png" alt="Insta 1">
                             <img src="./Images/insta2.png" alt="Insta 2">
@@ -265,22 +231,22 @@
                     </div>
                 </div>
 
-                <div class="glass-panel candy-scheme reveal delay-1">
-                    <h4 class="sub-head" style="color: var(--accent-pink);">🍭 Incentivized Growth Mechanics (The "Candy")</h4>
-                    <p class="intro">Legit strategies to force follower conversion through value exchange.</p>
-                    
+                <div class="glass-panel candy-scheme reveal">
+                    <h4 class="sub-head" style="color: var(--accent-pink);" data-key="candy_head">3. Incentivized Growth (The Candy)</h4>
                     <div class="candy-grid">
                         <div class="candy-item">
-                            <strong>Setup Wars (UGC)</strong>
-                            <p>Ask users to post their current (bad) TV setup. Best "worst setup" wins a Coocaa TV. <br><em>Result:</em> Massive organic reach & mentions.</p>
+                            <strong data-key="candy_a_title">A. Setup Wars (UGC)</strong>
+                            <p data-key="candy_a_desc">We ask users to tag us in their "Worst TV Setup." Every person who posts is a free billboard.</p>
+                            <div class="pitch-box pink-pitch">
+                                <p data-key="candy_a_pitch">"This is 'Weaponized UGC'. We generate thousands of organic impressions without spending a dollar on production."</p>
+                            </div>
                         </div>
                         <div class="candy-item">
-                            <strong>The "Unlock" Challenge</strong>
-                            <p>"If this Reel hits 10k Shares, we unlock exclusive member rewards for 1 hour." <br><em>Result:</em> Forces the algorithm to view us as viral.</p>
-                        </div>
-                        <div class="candy-item">
-                            <strong>Tech Education (Value)</strong>
-                            <p>"Stop using these settings on your TV." <br><em>Result:</em> High 'Save' count because it's useful info. Saves = Growth.</p>
+                            <strong data-key="candy_b_title">B. The Unlock Challenge</strong>
+                            <p data-key="candy_b_desc">"We won't release this code unless this post gets 5,000 shares." Turns individuals into a team.</p>
+                            <div class="pitch-box pink-pitch">
+                                <p data-key="candy_b_pitch">"We are gamifying our growth. This creates an artificial viral spike that forces the algorithm to pay attention."</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,9 +256,15 @@
 
         <section class="section closing">
             <div class="container">
-                <blockquote class="final-statement reveal">
-                    “Instead of showing what everyone already sees, the strategy focuses on what people usually overlook — where premium clarity truly matters.”
-                </blockquote>
+                <div class="summary-box reveal">
+                    <h5 data-key="summary_head">💡 Summary for the Meeting Room</h5>
+                    <blockquote class="final-statement" style="font-size: 1.5rem;" data-key="summary_text">
+                        "Our strategy is built on three layers. <br><br>
+                        <strong>1. Engineering:</strong> We exploit the algorithm using retention loops.<br>
+                        <strong>2. Creative:</strong> We use bold visuals to stop the scroll.<br>
+                        <strong>3. Psychology:</strong> We gamify rewards to build a cult following."
+                    </blockquote>
+                </div>
             </div>
         </section>
     </main>
@@ -300,7 +272,7 @@
     <footer>
         <div class="footer-content">
             <p class="chinese">谢谢您的时间与信任。</p>
-            <p class="copy">© 2026 Strategic Brand Division. <br>Lead Creative: <strong>RAGHAV</strong></p>
+            <p class="copy">© 2026 Strategic Brand Division. <br><span data-key="footer_lead"> Creative:</span> <strong>RAGHAV</strong></p>
         </div>
     </footer>
 
